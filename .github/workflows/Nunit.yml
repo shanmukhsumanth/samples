@@ -30,8 +30,8 @@ jobs:
       working-directory: ./
       run: dotnet build ./core/getting-started/unit-testing-using-nunit/unit-testing-using-nunit.sln
       
-    - name: add package Microsoft.NET.Test.Sdk
-      run: dotnet add ./core/getting-started/unit-testing-using-nunit package Microsoft.NET.Test.Sdk --version 16.10.0 
+    #- name: add package Microsoft.NET.Test.Sdk
+     # run: dotnet add ./core/getting-started/unit-testing-using-nunit package Microsoft.NET.Test.Sdk --version 16.10.0 
       
     - name: add package Nunit3TestAdapter
       run: dotnet add package Nunit3TestAdapter
