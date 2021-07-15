@@ -22,6 +22,8 @@ jobs:
       working-directory: .
       run: nuget restore ./core/getting-started/unit-testing-using-nunit/unit-testing-using-nunit.sln
       
+    - name: NUnit
+      run: dotnet new nunit
       
     #- name: Restore dependencies 
      # working-directory: ./core/getting-started/unit-testing-using-nunit/unit-testing-using-nunit.sln
