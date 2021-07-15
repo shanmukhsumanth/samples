@@ -34,10 +34,10 @@ jobs:
       run: dotnet add ./core/getting-started/unit-testing-using-nunit package Microsoft.NET.Test.Sdk --version 16.10.0 
       
     - name: add package Nunit3TestAdapter
-      run: dotnet add package Nunit3TestAdapter
+      run: dotnet add ./core/getting-started/unit-testing-using-nunit package Nunit3TestAdapter
       
     - name: add package NUnit
-      run: dotnet add package NUnit
+      run: dotnet add ./core/getting-started/unit-testing-using-nunit package NUnit
       
     - name: Test
       run: dotnet test --no-build --verbosity normal
